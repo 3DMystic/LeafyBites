@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="style.css" />
+        <title>Leafy Bites</title>
+    </head>
+    <body>
+        <header>
+            <nav><a>about</a></about><a>contact</a></nav>
+            <h1>Leafy <img src="./example"/> Bites</h1>
+        </header>
+        <hr>
+        <section>
+            <form action="" method="post">
+                <h1>Create a Burger!</h1>
+                <section class="bunType">
+                    <label for="bun">What type of bun would you like?</label>
+                    <select name="bun" id="bun">
+                        <option value="sesame">Sesame</option>
+                        <option value="pretzel">Pretzel</option>
+                        <option value="brioche">Brioche</option>
+                        <option value="potato">Potato</option>
+                    </select>
+                </section>
+                <hr>
+                <section>
+                    <label for="patty">What type of patty do you want?</label>
+                    <input type="text" id="patty" name="patty">
+                </section>
+                <hr>
+                <section class="cheesy">
+                    <span>Would you like extra cheese?</span>
+                    <br>
+                    <input type="radio" name="cheese" id="yes" value="yes">
+                    <label for="yes">Yes</label>
+                    <input type="radio" name="cheese" id="no" value="no">
+                    <label for="no">No</label>
+                <hr>
+                <section>
+                    <span class="toppings">What type of toppings would you like?</span>
+                    <br>
+                    <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+                    <label for="lettuce">Lettuce</label>
+                    <input type="checkbox" name="topping" id="tomato" value="tomato">
+                    <label for="tomato">Tomato</label>
+                    <input type="checkbox" name="topping" id="onion" value="onion">
+                    <label for="onion">Onion</label>
+                </section>
+                <hr>
+                <section class="additions">
+                    <label for="added">Anything else you would like to add?</label>
+                    <br>
+                    <textarea name="added" id="added" rows="3" cols="40"></textarea>
+                </section>
+            </form>
+        </section>
+    </body>
+</html>
