@@ -6,11 +6,13 @@
     </head>
     <body>
         <header>
-            <nav><a>about</a></about><a>contact</a></nav>
-            <h1>Leafy <img src="./example"/> Bites</h1>
+            <div id="header-img">
+                <img src="./leafyBites_Layer 1.svg"/>
+            </div>
+            <nav><span><a>about</a></nav><nav><a>contact</a></span></nav>
         </header>
         <hr>
-        <section>
+        <section class="choices">
             <form action="" method="post">
                 <h1>Create a Burger!</h1>
                 <section class="bunType">
@@ -28,12 +30,22 @@
                     <input type="text" id="patty" name="patty">
                 </section>
                 <hr>
-                <section class="cheesy">
-                    <span>Would you like extra cheese?</span>
+                <section class="cheeseType">
+                    <label for="cheese">What type of cheese would you like?</label>
+                    <select name="cheese" id="cheese">
+                        <option value="pepperJack">Pepper Jack</option>
+                        <option value="american">American</option>
+                        <option value="swiss">Swiss</option>
+                        <option value="cheddar">Cheddar</option>
+                    </select>
+                </section>
+                <hr>
+                <section class="mayo">
+                    <span>Would you like mayonaise?</span>
                     <br>
-                    <input type="radio" name="cheese" id="yes" value="yes">
+                    <input type="radio" name="mayo" id="yes" value="yes">
                     <label for="yes">Yes</label>
-                    <input type="radio" name="cheese" id="no" value="no">
+                    <input type="radio" name="mayo" id="no" value="no">
                     <label for="no">No</label>
                 <hr>
                 <section>

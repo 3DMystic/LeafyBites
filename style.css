@@ -1,4 +1,31 @@
+header {
+    background-color: coral;
+    padding: 20px;
+    margin: 10px 125px;
+    border-radius: 25px;
+    width: 1250px;
+}
+
+#header-img {
+    text-align: center;
+}    
+
+hr {
+    width: 500px;
+    height: 1px;
+    background-color: forestgreen;
+}
+
 body {
     background-color: aquamarine;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+}
+
+.choices {
+    background-color: tan;
+    border-radius: 25px;
+    width: 1000px;
+    margin: 20px 250px;
+    padding: 20px;
 }
