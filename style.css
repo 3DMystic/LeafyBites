@@ -1,9 +1,11 @@
+* {
+    margin: 0;
+    padding: 0;
+}
 header {
-    background-color: coral;
+    background-color: rgb(252, 133, 89);
     padding: 20px;
-    margin: 10px 125px;
-    border-radius: 25px;
-    width: 1250px;
+    margin: auto;
 }
 
 #header-img {
@@ -13,19 +15,50 @@ header {
 hr {
     width: 500px;
     height: 1px;
-    background-color: forestgreen;
+    margin: 20px auto;
 }
 
 body {
     background-color: aquamarine;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
+    font-size: large;
 }
 
 .choices {
-    background-color: tan;
+    background-color: burlywood;
     border-radius: 25px;
     width: 1000px;
     margin: 20px 250px;
     padding: 20px;
+    border-width: 25px;
+    border-color: red;
+
+}
+
+#patty,
+#added,
+#cheese,
+#bun {
+    background-color: aquamarine;
+}
+
+.submitButton :hover {
+    background-color: violet;
+}
+
+.imgBuns {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.imgBuns img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+figure {
+    background-color: gold;
+    border-radius: 5px;
 }

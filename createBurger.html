@@ -11,9 +11,9 @@
             </div>
             <nav><span><a>about</a></nav><nav><a>contact</a></span></nav>
         </header>
-        <hr>
+
         <section class="choices">
-            <form action="" method="post">
+            <form action="./submit.html" target="_blank" method="get">
                 <h1>Create a Burger!</h1>
                 <section class="bunType">
                     <label for="bun">What type of bun would you like?</label>
@@ -23,6 +23,24 @@
                         <option value="brioche">Brioche</option>
                         <option value="potato">Potato</option>
                     </select>
+                    <div class="imgBuns">
+                        <figure>
+                            <img src="./imgs/briocheBuns.jpg">
+                            <figcaption>Brioche Bun</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./imgs/potatoBurgerBun.jpg">
+                            <figcaption>Potato Bun</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./imgs/pretzelBun.jpg">
+                            <figcaption>Pretzel Bun</figcaption>
+                        </figure>
+                        <figure>
+                            <img src="./imgs/sesameBun.jpg">
+                            <figcaption>Sesame Bun</figcaption>
+                        </figure>
+                    </div>
                 </section>
                 <hr>
                 <section>
@@ -41,7 +59,7 @@
                 </section>
                 <hr>
                 <section class="mayo">
-                    <span>Would you like mayonaise?</span>
+                    <span>Would you like vegan mayonaise?</span>
                     <br>
                     <input type="radio" name="mayo" id="yes" value="yes">
                     <label for="yes">Yes</label>
@@ -64,6 +82,9 @@
                     <br>
                     <textarea name="added" id="added" rows="3" cols="40"></textarea>
                 </section>
+                <hr>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
             </form>
         </section>
     </body>
