@@ -1,91 +1,118 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="style.css" />
         <title>Leafy Bites</title>
     </head>
     <body>
         <header>
-            <div id="header-img">
+            <div class="header-img">
                 <img src="./leafyBites_Layer 1.svg"/>
             </div>
-            <nav><span><a>about</a></nav><nav><a>contact</a></span></nav>
+            <nav class="navbar">
+                <ul class="navbar-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="#bottom">Bottom</a></li>
+                </ul>
+            </nav>
         </header>
-
-        <section class="choices">
-            <form action="./submit.html" target="_blank" method="get">
-                <h1>Create a Burger!</h1>
-                <section class="bunType">
-                    <label for="bun">What type of bun would you like?</label>
-                    <select name="bun" id="bun">
-                        <option value="sesame">Sesame</option>
-                        <option value="pretzel">Pretzel</option>
-                        <option value="brioche">Brioche</option>
-                        <option value="potato">Potato</option>
-                    </select>
-                    <div class="imgBuns">
-                        <figure>
-                            <img src="./imgs/briocheBuns.jpg">
-                            <figcaption>Brioche Bun</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./imgs/potatoBurgerBun.jpg">
-                            <figcaption>Potato Bun</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./imgs/pretzelBun.jpg">
-                            <figcaption>Pretzel Bun</figcaption>
-                        </figure>
-                        <figure>
-                            <img src="./imgs/sesameBun.jpg">
-                            <figcaption>Sesame Bun</figcaption>
-                        </figure>
-                    </div>
-                </section>
-                <hr>
-                <section>
-                    <label for="patty">What type of patty do you want?</label>
-                    <input type="text" id="patty" name="patty">
-                </section>
-                <hr>
-                <section class="cheeseType">
-                    <label for="cheese">What type of cheese would you like?</label>
-                    <select name="cheese" id="cheese">
-                        <option value="pepperJack">Pepper Jack</option>
-                        <option value="american">American</option>
-                        <option value="swiss">Swiss</option>
-                        <option value="cheddar">Cheddar</option>
-                    </select>
-                </section>
-                <hr>
-                <section class="mayo">
-                    <span>Would you like vegan mayonaise?</span>
-                    <br>
-                    <input type="radio" name="mayo" id="yes" value="yes">
-                    <label for="yes">Yes</label>
-                    <input type="radio" name="mayo" id="no" value="no">
-                    <label for="no">No</label>
-                <hr>
-                <section>
-                    <span class="toppings">What type of toppings would you like?</span>
-                    <br>
-                    <input type="checkbox" name="topping" id="lettuce" value="lettuce">
-                    <label for="lettuce">Lettuce</label>
-                    <input type="checkbox" name="topping" id="tomato" value="tomato">
-                    <label for="tomato">Tomato</label>
-                    <input type="checkbox" name="topping" id="onion" value="onion">
-                    <label for="onion">Onion</label>
-                </section>
-                <hr>
-                <section class="additions">
-                    <label for="added">Anything else you would like to add?</label>
-                    <br>
-                    <textarea name="added" id="added" rows="3" cols="40"></textarea>
-                </section>
-                <hr>
-                <button type="submit">Submit</button>
-                <button type="reset">Reset</button>
-            </form>
-        </section>
+        <div class="container">
+            <section class="choices">
+                <form action="./submit.html" target="_blank" method="get">
+                    <h1>Create a Burger!</h1>
+                    <section class="bunType">
+                        <label for="bun">What type of bun would you like?</label>
+                        <select name="bun" id="bun">
+                            <option value="sesame">Sesame</option>
+                            <option value="pretzel">Pretzel</option>
+                            <option value="brioche">Brioche</option>
+                            <option value="potato">Potato</option>
+                        </select>
+                        <div class="imgBuns">
+                            <figure>
+                                <img src="./imgs/briocheBuns.jpg">
+                                <figcaption>Brioche Bun</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./imgs/potatoBurgerBun.jpg">
+                                <figcaption>Potato Bun</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./imgs/pretzelBun.jpg">
+                                <figcaption>Pretzel Bun</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./imgs/sesameBun.jpg">
+                                <figcaption>Sesame Bun</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                    <hr>
+                    <section>
+                        <label for="patty">What type of patty do you want?</label>
+                        <input type="text" id="patty" name="patty">
+                        <div class="imgPatties">
+                            <figure>
+                                <img src="./imgs/beyondMeatPatty.jpg">
+                                <figcaption>Beyond Meat Patty</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./imgs/tofuVeggiePatty.jpg">
+                                <figcaption>Tofu Veggie Patty</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./imgs/blackBeanPatty.jpg">
+                                <figcaption>Black Bean Patty</figcaption>
+                            </figure>
+                            <figure>
+                                <img src="./imgs/chicpeaBurgerPatty.jpg">
+                                <figcaption>Chicpea Patty</figcaption>
+                            </figure>
+                        </div>
+                    </section>
+                    <hr>
+                    <section class="cheeseType">
+                        <label for="cheese">What type of cheese would you like?</label>
+                        <select name="cheese" id="cheese">
+                            <option value="pepperJack">Pepper Jack</option>
+                            <option value="american">American</option>
+                            <option value="swiss">Swiss</option>
+                            <option value="cheddar">Cheddar</option>
+                        </select>
+                    </section>
+                    <hr>
+                    <section class="mayo">
+                        <span>Would you like vegan mayonaise?</span>
+                        <br>
+                        <input type="radio" name="mayo" id="yes" value="yes">
+                        <label for="yes">Yes</label>
+                        <input type="radio" name="mayo" id="no" value="no">
+                        <label for="no">No</label>
+                    <hr>
+                    <section>
+                        <span class="toppings">What type of toppings would you like?</span>
+                        <br>
+                        <input type="checkbox" name="topping" id="lettuce" value="lettuce">
+                        <label for="lettuce">Lettuce</label>
+                        <input type="checkbox" name="topping" id="tomato" value="tomato">
+                        <label for="tomato">Tomato</label>
+                        <input type="checkbox" name="topping" id="onion" value="onion">
+                        <label for="onion">Onion</label>
+                    </section>
+                    <hr>
+                    <section class="additions">
+                        <label for="added">Anything else you would like to add?</label>
+                        <br>
+                        <textarea name="added" id="added" rows="3" cols="40"></textarea>
+                    </section>
+                    <hr>
+                    <button type="submit">Submit</button>
+                    <button type="reset">Reset</button>
+                </form>
+            </section>
+        </div>
     </body>
 </html>
